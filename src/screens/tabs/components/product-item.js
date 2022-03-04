@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet,TouchableOpacity, Image } from "react-native";
+import { View, Text, StyleSheet,Image } from "react-native";
 import { tab1Style } from "../styles/tab1-style";
-import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
-import { faShoppingCart, faBookmark } from "@fortawesome/free-solid-svg-icons";
 import AddToCartButton from "./addToCartButton";
 import AddToFavoriteButton from "./addToFavoriteButton";
 export default class ProductItem extends Component {

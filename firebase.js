@@ -11,7 +11,7 @@ const firebaseConfig = {
   storageBucket: "shoppingapp-e17ad.appspot.com",
   messagingSenderId: "1041252892138",
   appId: "1:1041252892138:web:88127fcd04627ca35b8693"
-  }
+  };
 
 // Initialize Firebase
 let app;

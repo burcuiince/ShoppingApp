@@ -8,7 +8,7 @@ import {
   ActivityIndicator,
   TouchableOpacity,
 } from "react-native";
-import { auth, fireStore } from "../../../firebase";
+import { fireStore } from "../../../firebase";
 import DeleteButton from "./components/deleteButton";
 export default class Tab3 extends Component {
   constructor(props) {
@@ -73,7 +73,7 @@ export default class Tab3 extends Component {
           console.log(item.data());
           list.push({
             docId: item.id,
-            cartItem : item.data()
+            cartItem: item.data()
           });
         });
 
@@ -91,16 +91,16 @@ export default class Tab3 extends Component {
       });
   }
 
-  deleteComplated = (item)=>{
+  deleteComplated = (item) => {
     var total = 0;
-    var list = this.state.cartItems.filter(x=>x.docId !== item.docId);
+    var list = this.state.cartItems.filter(x => x.docId !== item.docId);
     list.map((satir) => {
       total += satir.cartItem.price * satir.cartItem.quantity;
     });
 
     this.setState({
-      cartItems:list,
-      cartTotal:total
+      cartItems: list,
+      cartTotal: total
     })
   }
 
@@ -116,8 +116,8 @@ export default class Tab3 extends Component {
         <View style={[this.styles.cartColumn, { flex: 2 }]}>
           <Text>{item.cartItem.price}</Text>
         </View>
-        <View style={[this.styles.cartColumn, { flex: 1,backgroundColor: "#c95313" }]}>
-          <DeleteButton item={item} deleteConfirm={this.deleteComplated}/>
+        <View style={[this.styles.cartColumn, { flex: 1, backgroundColor: "#c95313" }]}>
+          <DeleteButton item={item} deleteConfirm={this.deleteComplated} />
         </View>
       </View>
     );
@@ -129,7 +129,7 @@ export default class Tab3 extends Component {
         <View style={this.styles.headerContainer}>
           <View style={[this.styles.cartColumn, { flex: 5 }]}>
             <Text style={{ fontWeight: "bold", color: "#626264" }}>
-              ÜrÜn Adı
+              Ürün Adı
             </Text>
           </View>
           <View style={[this.styles.cartColumn, { flex: 1 }]}>
@@ -176,7 +176,7 @@ export default class Tab3 extends Component {
         </View>
         <View style={this.styles.orderButton}>
           <TouchableOpacity onPress={this.saveOrderHandler}>
-            <Text style={{ fontWeight: "bold", color: "#c95313"}}>
+            <Text style={{ fontWeight: "bold", color: "#c95313" }}>
               Sipariş Ver
             </Text>
           </TouchableOpacity>

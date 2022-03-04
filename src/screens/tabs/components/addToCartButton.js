@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { TouchableOpacity } from "react-native";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { auth, fireStore } from "../../../../firebase";
+
 export default class AddToCartButton extends Component {
   constructor(props) {
     super(props);

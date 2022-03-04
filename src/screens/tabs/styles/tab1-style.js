@@ -42,10 +42,9 @@ const tab1Style = {
   imageContainer: {
     flex: 2,
     margin: 3,
-    //justifyContent: "center",
+    justifyContent: "center",
     alignItems: "center",
   },
-  imageBox: {},
   productPrice: {
     fontWeight: "bold",
     fontSize: 14,

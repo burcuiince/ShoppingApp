@@ -25,14 +25,14 @@ export default class MyComponent extends Component {
             <TouchableOpacity onPress={() => {
               this.props.navigation.navigate("Account");
             }}>
-              <Text style={{ fontWeight: "600", fontSize: 20,color:"#8f5d41" }}>Account</Text>
+              <Text style={{ fontWeight: "600", fontSize: 20, color: "#8f5d41" }}>Account</Text>
             </TouchableOpacity>
           </View>
           <View style={this.styles.txtPart} >
             <TouchableOpacity onPress={() => {
               this.props.navigation.navigate("Main");
             }}>
-              <Text style={{ fontWeight: "600", fontSize: 20,color:"#8f5d41"}}>Shop</Text>
+              <Text style={{ fontWeight: "600", fontSize: 20, color: "#8f5d41" }}>Shop</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -56,17 +56,17 @@ export default class MyComponent extends Component {
       justifyContent: "center",
       alignItems: "center",
       borderRadius: 30,
-      borderWidth:3,
-      borderColor:"#9d9494"
+      borderWidth: 3,
+      borderColor: "#9d9494"
     },
-    txtPart:{
+    txtPart: {
       borderColor: "black",
-      borderWidth:1.5,
+      borderWidth: 1.5,
       backgroundColor: "white",
-      borderRadius:20,
-      margin:5 ,
-      padding:10,
-      },
+      borderRadius: 20,
+      margin: 5,
+      padding: 10,
+    },
 
     bottomPart: {
       margin: 10,
