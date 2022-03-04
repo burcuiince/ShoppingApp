@@ -33,13 +33,13 @@ export default class MyComponent extends Component {
         barStyle={{ backgroundColor: "#4a572a", borderColor: "#8f5d41", borderWidth: 2 }}>
         <BottomTab.Screen name="Tab1" component={Tab1} options={{
           title: "Ürünler", tabBarIcon: ({}) => (
-            <FontAwesomeIcon icon={faStore} size={26} color={ 'white' } />
+           <FontAwesomeIcon icon={faStore} size={26} color={ 'white' } />
           ),
         }} />
         <BottomTab.Screen name="Tab2" component={Tab2} options={{
           title: "Ara", tabBarIcon: ({}) => (
             <FontAwesomeIcon icon={faSearch} size={26} color={'white'} />
-          ),
+         ),
         }} />
         <BottomTab.Screen name="Tab3" component={Tab3} options={{
           title: "Sepetim", tabBarIcon: ({}) => (
