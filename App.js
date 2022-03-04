@@ -35,6 +35,7 @@ export default class MyComponent extends Component {
           title: "Ürünler", tabBarIcon: ({}) => (
            <FontAwesomeIcon icon={faStore} size={26} color={ 'white' } />
           ),
+          
         }} />
         <BottomTab.Screen name="Tab2" component={Tab2} options={{
           title: "Ara", tabBarIcon: ({}) => (
